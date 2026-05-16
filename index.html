@@ -607,6 +607,8 @@ footer {
   <input type="hidden" name="access_key" value="591fb496-6512-4f11-9882-856c00f4e56c"/>
   <input type="hidden" name="subject" value="New Inquiry from Solgens Website"/>
   <input type="hidden" name="from_name" value="Solgens Website"/>
+  <input type="hidden" name="redirect" value="https://website-eight-xi-81.vercel.app/#contact"/>
+  <input type="checkbox" name="botcheck" style="display:none;"/>
   <div class="frow">
     <div class="fg"><label class="fl">First Name</label><input type="text" name="first_name" class="fi" placeholder="John" required/></div>
     <div class="fg"><label class="fl">Last Name</label><input type="text" name="last_name" class="fi" placeholder="Smith"/></div>
@@ -655,8 +657,8 @@ footer {
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   // Form submission
-  // form handled by web3forms
-  false && (function(){
+  document.querySelector('.cform') && document.querySelector('.cform').addEventListener('submit', function(e){
+    e.preventDefault();
     const btn = this.querySelector('.fsub');
     btn.textContent = 'Message Sent';
     btn.style.background = '#2a6e3f';
@@ -665,4 +667,4 @@ footer {
 </script>
 
 </body>
-</html>
+</html> 
