@@ -262,7 +262,7 @@ p.body { font-size: .84rem; line-height: 1.86; color: var(--muted); }
 .fi, .ft { background: rgba(255,255,255,.022); border: 1px solid var(--border); color: var(--cream); padding: 12px 15px; font-family: var(--sans); font-size: .83rem; font-weight: 300; outline: none; width: 100%; transition: border-color .3s, background .3s; }
 .fi::placeholder, .ft::placeholder { color: rgba(240,237,230,.22); }
 .fi:focus, .ft:focus { border-color: var(--gold); background: rgba(201,168,76,.03); }
-.ft { resize: vertical; min-height: 108px; }
+.ft { resize: none; min-height: 108px; }
 .fsub { font-family: var(--sans); font-size: .6rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--black); background: var(--gold); border: none; padding: 14px 36px; cursor: pointer; align-self: flex-start; transition: background .3s, transform .25s; }
 .fsub:hover { background: var(--gold2); transform: translateY(-2px); }
 
@@ -605,8 +605,6 @@ footer {
 </div>
 
 <form class="cform reveal d2" action="https://api.web3forms.com/submit" method="POST">
-```
-
   <input type="hidden" name="access_key" value="591fb496-6512-4f11-9882-856c00f4e56c"/>
   <input type="hidden" name="subject" value="New Inquiry from Solgens Website"/>
   <input type="hidden" name="from_name" value="Solgens Website"/>
@@ -621,7 +619,8 @@ footer {
   <div class="fg"><label class="fl">Message</label><textarea name="message" class="ft" placeholder="Tell us about your inquiry…" required></textarea></div>
   <button type="submit" class="fsub">Send Message</button>
 </form>
-    </div>
+```
+
   </div>
 </section>
 
