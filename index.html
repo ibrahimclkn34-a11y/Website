@@ -657,8 +657,7 @@ footer {
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   // Form submission
-  document.querySelector('.cform') && document.querySelector('.cform').addEventListener('submit', function(e){
-    e.preventDefault();
+  false && (function(e){e.preventDefault();
     const btn = this.querySelector('.fsub');
     btn.textContent = 'Message Sent';
     btn.style.background = '#2a6e3f';
